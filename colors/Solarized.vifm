@@ -40,7 +40,7 @@ highlight StatusLine    ctermfg=04 ctermbg=00 cterm=none
 highlight Border        ctermfg=04 ctermbg=00 cterm=none
 
 highlight Selected      ctermfg=-1 ctermbg=00 cterm=none
-highlight CurrLine      ctermfg=-1 ctermbg=-1 cterm=standout
+highlight CurrLine      ctermfg=-1 ctermbg=-1 cterm=underline
 
 highlight WildMenu      ctermfg=07 ctermbg=-1 cterm=underline
 highlight CmdLine       ctermfg=14 ctermbg=-1 cterm=none
