@@ -34,7 +34,7 @@
 
 highlight Win           ctermfg=15 ctermbg=none cterm=none
 
-highlight TopLine       ctermfg=04 ctermbg=08 cterm=none
+highlight TopLine       ctermfg=04 ctermbg=-1 cterm=none
 highlight TopLineSel    ctermfg=04 ctermbg=00 cterm=none
 highlight StatusLine    ctermfg=04 ctermbg=00 cterm=none
 highlight Border        ctermfg=04 ctermbg=00 cterm=none
