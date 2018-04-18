@@ -59,10 +59,6 @@ set norunexec
 
 set noiec
 
-" Selected color scheme
-
-colorscheme Default
-
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
@@ -472,6 +468,9 @@ fileviewer *.html w3m %c
 " Block particular shortcut
 "
 " nnoremap <left> <nop>
+
+command untar tar xvf %f:p
+command untgz tar xvzf %f:p
 
 " ------------------------------------------------------------------------------
 
