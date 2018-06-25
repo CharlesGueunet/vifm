@@ -231,8 +231,11 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-         \ convert -identify %f -verbose /dev/null
+
+" fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+"          \ convert -identify %f -verbose /dev/null
+
+fileviewer *.jpg,*.png,*.jpeg img2txt %c
 
 " OpenRaster
 filextype *.ora
@@ -352,7 +355,7 @@ filextype */
 
 " Displaying pictures in terminal
 "
-" fileviewer *.jpg,*.png shellpic %c
+" fileviewer *.jpg,*.png,*.jpeg img2txt %c
 
 " Open all other files with default system programs (you can also remove all
 " :file[x]type commands above to ensure they don't interfere with system-wide
@@ -442,7 +445,7 @@ nnoremap <f8> :delete<cr>
 " Preview
 
 " image with libcaca
-fileviewer *.png,*.jpeg,*.jpg img2txt %c
+" fileviewer *.png,*.jpeg,*.jpg shellpic %c
 
 " Inside archive
 fileviewer *.tar tar -tvf %c
@@ -469,8 +472,8 @@ fileviewer *.html w3m %c
 "
 " nnoremap <left> <nop>
 
-command untar tar xvf %f:p
-command untgz tar xvzf %f:p
+command! untar tar xvf %f:p
+command! untgz tar xvzf %f:p
 
 " ------------------------------------------------------------------------------
 
