@@ -449,9 +449,9 @@ nnoremap <f8> :delete<cr>
 
 " Inside archive
 fileviewer *.tar tar -tvf %c
-
-" Inside archive
 fileviewer *.tar.gz tar -tgvf %c
+fileviewer *.zip unzip -l %c
+
 
 " Web preview with links
 fileviewer *.html w3m %c
@@ -474,6 +474,7 @@ fileviewer *.html w3m %c
 
 command! untar tar xvf %f:p
 command! untgz tar xvzf %f:p
+command! unzip unzip %f:p
 
 " ------------------------------------------------------------------------------
 
