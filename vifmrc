@@ -462,7 +462,10 @@ fileviewer *.html w3m %c
 
 " Use ag (the silver searcher) instead of grep
 "
-" set grepprg=ag\ --line-numbers\ %i\ %a\ %s
+set grepprg=ag\ --line-numbers\ %i\ %a\ %s
+" and fzf to move around
+command! fzf :execute '!fzf 2>&0 %%U' | normal! gf
+nnoremap ,f :fzf<cr>
 
 " Add additional place to look for executables
 "
@@ -475,6 +478,7 @@ fileviewer *.html w3m %c
 command! untar tar xvf %f:p
 command! untgz tar xvzf %f:p
 command! unzip unzip %f:p
+
 
 " ------------------------------------------------------------------------------
 
