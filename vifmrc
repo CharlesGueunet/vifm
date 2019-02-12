@@ -342,18 +342,15 @@ filextype */
 "
 " Explicitly set highlight type for some extensions
 "
-" 256-color terminal
-fileviewer *.[ch],*.[ch]pp,*.[ch]xx highlight -O xterm256 --syntax c %c
-fileviewer Makefile,Makefile.* highlight -O xterm256 --syntax make %c
-fileviewer CMakeLists.txt,*.cmake highlight -O xterm256 --syntax cmake %c
-fileviewer *.md highlight -O xterm256 --syntax markdown %c
-fileviewer *.vt[uip],*.pvsm,*.pvd highlight -O xterm256 --syntax xml  %c
+" fileviewer *.[ch],*.[ch]pp,*.[ch]xx highlight -O xterm256 --syntax c %c
+" fileviewer Makefile,Makefile.* highlight -O xterm256 --syntax make %c
+" fileviewer CMakeLists.txt,*.cmake highlight -O xterm256 --syntax cmake %c
+" fileviewer *.md highlight -O xterm256 --syntax markdown %c
+" fileviewer *.vt[uip],*.pvsm,*.pvd highlight -O xterm256 --syntax xml  %c
 
-fileviewer *[^/] pygmentize -O style=solarized -f console256 -g
-
-" Displaying pictures in terminal
-"
-" fileviewer *.jpg,*.png,*.jpeg img2txt %c
+" Default viewer
+fileviewer *[^/] bat --color always --decorations always --wrap never --pager never -m vtu:xml -m vti:xml -m pvsm:xml %c -p
+" fileviewer *[^/] pygmentize -O style=solarized -f console256 -g
 
 " Open all other files with default system programs (you can also remove all
 " :file[x]type commands above to ensure they don't interfere with system-wide
