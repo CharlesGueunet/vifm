@@ -39,18 +39,18 @@ highlight TopLineSel    ctermfg=04 ctermbg=none cterm=none
 highlight StatusLine    ctermfg=04 ctermbg=none cterm=none
 highlight Border        ctermfg=04 ctermbg=none cterm=none
 
-highlight Selected      ctermfg=-1 ctermbg=00 cterm=none
-highlight CurrLine      ctermfg=09 ctermbg=-1 cterm=underline
+highlight Selected      ctermfg=01 ctermbg=00 cterm=none
+highlight CurrLine                 ctermbg=-1 cterm=underline
 
 highlight WildMenu      ctermfg=07 ctermbg=-1 cterm=underline
 highlight CmdLine       ctermfg=14 ctermbg=-1 cterm=none
 highlight ErrorMsg      ctermfg=01 ctermbg=00 cterm=none
 
-highlight Directory     ctermfg=12 ctermbg=-1 cterm=bold
-highlight Link          ctermfg=03 ctermbg=-1 cterm=none
-highlight BrokenLink    ctermfg=01 ctermbg=-1 cterm=none
-highlight Socket        ctermfg=05 ctermbg=-1 cterm=none
-highlight Device        ctermfg=01 ctermbg=-1 cterm=none
-highlight Fifo          ctermfg=06 ctermbg=-1 cterm=none
+highlight Directory     ctermfg=12            cterm=bold
+highlight Link          ctermfg=03            cterm=none
+highlight BrokenLink    ctermfg=09            cterm=none
+highlight Socket        ctermfg=05            cterm=none
+highlight Device        ctermfg=01            cterm=none
+highlight Fifo          ctermfg=06            cterm=none
 
 highlight Executable    ctermfg=02 ctermbg=-1 cterm=none
