@@ -237,6 +237,10 @@ fileviewer *.bmp,*.gif,*.xpm
 
 fileviewer *.jpg,*.png,*.jpeg img2txt %c
 
+" Videos
+
+filetype *.avi,*.mp4,*.mkv mpv %c
+
 " OpenRaster
 filextype *.ora
         \ {Edit in MyPaint}
