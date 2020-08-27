@@ -252,8 +252,7 @@ fileviewer *.mp3 mp3info
 " Otherwise
 " ---------
 
-fileviewer *[^/] bat --color always --decorations always --wrap never --pager never -m vtu:xml -m vti:xml -m pvsm:xml %c -p
-" fileviewer *[^/] pygmentize -O style=solarized -f console256 -g
+fileviewer *[^/] txt-preview
 
 " view by default
 view
