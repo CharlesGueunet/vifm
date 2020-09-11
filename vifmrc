@@ -230,6 +230,7 @@ fileviewer *.pdf pdftotext -nopgbrk %c -
 
 fileviewer *.bmp,*.gif,*.xpm
          \ convert -identify %f -verbose /dev/null
+filetype *.jpg,*.png,*.jpeg feh %c &
 fileviewer *.jpg,*.png,*.jpeg img2txt %c
 
 " Video
