@@ -225,6 +225,7 @@ filetype *.asc
 " -----
 
 filextype *.pdf zathura %c %i &
+filetype *.png,*.jpg,*.jpeg feh %f &
 fileviewer *.pdf pdftotext -nopgbrk %c -
 
 fileviewer *.bmp,*.gif,*.xpm
