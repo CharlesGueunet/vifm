@@ -125,9 +125,9 @@ command! diff vim -d %f %F
 command! zip zip -r %f.zip %f
 command! run !! ./%f
 command! make !!make %a
-command! cmake !!cmake %a
-command! cmakeb !!cmake --target build %a
-command! cmakei !!cmake --target install %a
+command! cmake !!cmake -C  ~/.config/cmake/base.cmake -G 'Ninja Multi-Config' -B build -S .
+command! cmaked !!cmake --build build --config Debug -- %a
+command! cmaker !!cmake --build build --config Release --target install -- %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
