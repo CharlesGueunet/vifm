@@ -180,6 +180,9 @@ fileviewer *.doc catdoc %c
 fileviewer *.docx, docx2txt.pl %f -
 
 filetype *.o nm %f | less
+filetype *.so nm %f | less
+fileviewer *.o ldd %c
+fileviewer *.so ldd %c
 
 filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
