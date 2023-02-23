@@ -1,0 +1,3 @@
+[submodule "vifm_devicons"]
+	path = vifm_devicons
+	url = https://github.com/thimc/vifm_devicons.git

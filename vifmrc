@@ -339,3 +339,6 @@ command! unzip unzip %f:p
 
 colorscheme Solarized
 
+" icons
+
+source /home/charles/.config/vifm/vifm_devicons/favicons.vifm
