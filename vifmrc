@@ -163,6 +163,9 @@ command! reload :write | restart
 " Archives
 " --------
 
+filextype *.zip
+        \ {unzip}
+        \ unzip %f
 fileviewer *.zip,*.jar,*.war,*.ear,*.oxt zip -sf %c
 fileviewer *.tgz,*.tar.gz tar -tgzf %c
 fileviewer *.tar.bz2,*.tbz2 tar -tjf %c
