@@ -346,7 +346,7 @@ command! unzip unzip %f:p
 
 " Color scheme
 
-colorscheme Solarized
+colorscheme Light
 
 " icons
 
