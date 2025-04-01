@@ -59,7 +59,7 @@ highlight   Device       cterm=none                ctermfg=57    ctermbg=255
 
 highlight   Fifo         cterm=none                ctermfg=24    ctermbg=255
 highlight   Executable   cterm=none                ctermfg=125   ctermbg=255
-highlight   Selected     cterm=none                ctermfg=16    ctermbg=154
+highlight   Selected     cterm=none                ctermfg=16    ctermbg=150
 
 highlight   CurrLine     cterm=reverse             ctermfg=-1    ctermbg=-1 " none 238 254
 highlight   TopLineSel   cterm=none                ctermfg=255   ctermbg=31
